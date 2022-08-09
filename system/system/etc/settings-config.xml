@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resources>
+	<setting type="global" name="auto_time" value="1"/>
+	<setting type="global" name="auto_time_zone" value="1"/>
+	<setting type="system" name="date_format" value="dd/MM/yyyy"/>
+	<setting type="system" name="screen_off_timeout" value="30000"/>
+        <setting type="system" name="status_bar_show_battery_percent" value="1"/>
+	<setting type="system" name="accelerometer_rotation" value="0"/>
+        <!-- dong.wang add default enable  livenessmode begin-->
+	<setting type="secure" name="face_unlock_require_livenessmode" value="1"/>
+        <!-- dong.wang add default enable  livenessmode end-->
+        <!-- FEATURE_SINGLE_HAND hsg 20190904-->
+        <setting type="global" name="enable_single_hand" value="1" />
+        <!-- TINNO END -->
+</resources>
