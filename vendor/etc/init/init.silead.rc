@@ -1,0 +1,10 @@
+on post-fs
+     mkdir /data/vendor/silead 0700 system  system
+     restorecon /data/vendor/silead
+
+on boot
+    chmod 0666 /dev/silead_fp
+    chown system system /dev/silead_fp
+
+    chmod 0660 /dev/trusty-ipc-dev0
+    chown system system /dev/trusty-ipc-dev0

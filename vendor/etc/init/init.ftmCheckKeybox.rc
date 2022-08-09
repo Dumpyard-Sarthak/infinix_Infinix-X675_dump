@@ -1,0 +1,6 @@
+service ftmCheckKeybox /vendor/bin/ftmCheckKeybox
+    class late_start
+    user system
+    group system
+    oneshot
+    

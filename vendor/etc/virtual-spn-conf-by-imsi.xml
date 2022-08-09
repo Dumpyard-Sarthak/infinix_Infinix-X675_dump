@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<virtualSpnOverridesByImsi version="1">
+    <virtualSpnOverride imsipattern="20601889xxxxxxx" name="Telenet"/>
+    <virtualSpnOverride imsipattern="20801xxx67xxxxx" name="Virgin"/>
+    <virtualSpnOverride imsipattern="293400130xxxxxx" name="Ventocom"/>
+    <virtualSpnOverride imsipattern="41866xxx36xxxxx" name="Newroz4G"/>
+    <virtualSpnOverride imsipattern="41866xxx82xxxxx" name="Fastlink"/>
+    <virtualSpnOverride imsipattern="41866xxx83xxxxx" name="Fastlink"/>
+</virtualSpnOverridesByImsi>

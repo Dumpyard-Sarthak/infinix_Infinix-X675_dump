@@ -1,0 +1,31 @@
+service vendor.hardware.hidlserver@1.0-service /vendor/bin/hw/vendor.hardware.hidlserver@1.0-service
+    interface vendor.hardware.hidlserver@1.0::IHidlserver default
+    class hal
+    user system
+    group system input
+
+on property:vendor.hs.trigger=0
+    stop vendor.hardware.hidlserver@1.0-service
+
+on property:vendor.hs.trigger=1
+    restart vendor.hardware.hidlserver@1.0-service
+    
+on property:persist.vendor.tn.gsensor=1
+    chown system root /mnt/vendor/sensorhub/sensor_calibration_data/acc
+	chmod 660 /mnt/vendor/sensorhub/sensor_calibration_data/acc
+on property:persist.vendor.tn.apktag=1
+    chown system system /mnt/vendor/productinfo/ftmApkReport.txt
+    chmod 666 /mnt/vendor/productinfo/ftmApkReport.txt	
+on post-fs-data
+    mkdir /data/vendor/hidlserver 2770 system system
+    chmod 2770 /data/vendor/hidlserver
+    chown system system /data/vendor/hidlserver
+    #mkdir /mnt/vendor/persist 2770 system system
+    #chmod 2777 /mnt/vendor/persist
+    #chown system system /mnt/vendor/persist
+    #restorecon_recursive /mnt/vendor/persist
+    #chown system system /mnt/vendor/persist/ftmApk-test-report.txt
+    #chmod 0664 /mnt/vendor/persist/ftmApk-test-report.txt
+    #chown system system /mnt/vendor/persist/ftmApk-check-tag.txt
+    #chmod 0664 /mnt/vendor/persist/ftmApk-check-tag.txt
+
