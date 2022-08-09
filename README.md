@@ -1,0 +1,18 @@
+## v880-user 11 RP1A.201005.001 1652755505 release-keys
+- Manufacturer: infinix mobility limited
+- Platform: ums512
+- Codename: Infinix-X675
+- Brand: Infinix
+- Flavor: v880-user
+- Release Version: 11
+- Id: RP1A.201005.001
+- Incremental: 220514V15
+- Tags: release-keys
+- CPU Abilist: arm64-v8a,armeabi-v7a,armeabi
+- A/B Device: true
+- Locale: en-US
+- Screen Density: undefined
+- Fingerprint: Infinix/X675-GL/Infinix-X675:11/RP1A.201005.001/220514V15:user/release-keys
+- OTA version: 
+- Branch: v880-user-11-RP1A.201005.001-1652755505-release-keys
+- Repo: infinix_infinix-x675_dump
